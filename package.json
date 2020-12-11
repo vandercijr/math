@@ -11,6 +11,11 @@
   "author": "Vanderci Curvelo Jr",
   "license": "UNLICENSED",
   "devDependencies": {
-    "jest": "^23.1.0"
+    "eslint": "^6.6.0",
+    "jest": "^23.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
