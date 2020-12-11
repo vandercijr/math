@@ -1,0 +1,16 @@
+{
+  "name": "@vanderci/mathjs",
+  "version": "0.1.0",
+  "description": "A bunch of algorithms for numerical computation ",
+  "main": "lib/mathjs",
+  "repository": "git://github.com/vandercijr/math.git",
+  "scripts": {
+    "test": "jest",
+    "test-lib": "NODE_ENV=production jest"
+  },
+  "author": "Vanderci Curvelo Jr",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
+}
