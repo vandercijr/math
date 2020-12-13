@@ -14,12 +14,17 @@ export const variance = (input) => {
   // const average = input.reduce((acc, p) => acc + p, 0) / inputSize;
   const average = kahanSum(input) / inputSize;
 
-  let value = 0,
-    sum = 0;
-  for (let i = 0; i < inputSize; i++) {
-    value = input[i] - average;
-    sum += value * value;
-  }
+  // let value = 0,
+  //   sum = 0;
+  // for (let i = 0; i < inputSize; i++) {
+  //   value = input[i] - average;
+  //   sum += value * value;
+  // }
 
-  return sum / inputSize;
+  return (
+    input.reduce((acc, i) => {
+      const value = i - average;
+      return acc + value * value;
+    }, 0) / inputSize
+  );
 };
