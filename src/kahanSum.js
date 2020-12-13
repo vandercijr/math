@@ -1,3 +1,12 @@
+"use strict";
+
+/**
+ * File: kahanSum.js
+ * Author: Vanderci Curvelo Junior
+ * Description: implementation of Kahan summation algorithm
+ * run on nodejs
+ * Data: 10/12/2020
+ */
 // https://rosettacode.org/wiki/Kahan_summation#Python:_Arbitrary_precision_Decimal
 
 /*
