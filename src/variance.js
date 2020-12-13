@@ -1,5 +1,7 @@
 "use strict";
 
+import { kahanSum } from "./kahanSum";
+
 /**
  * File: variance.js
  * Author: Vanderci Curvelo Junior
@@ -9,7 +11,8 @@
  */
 export const variance = (input) => {
   const inputSize = input.length;
-  const average = input.reduce((acc, p) => acc + p, 0) / inputSize;
+  // const average = input.reduce((acc, p) => acc + p, 0) / inputSize;
+  const average = kahanSum(input) / inputSize;
 
   let value = 0,
     sum = 0;
