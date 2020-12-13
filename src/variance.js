@@ -1,3 +1,12 @@
+"use strict";
+
+/**
+ * File: variance.js
+ * Author: Vanderci Curvelo Junior
+ * Description: implementation of variance statistical calculation
+ * run on nodejs
+ * Data: 13/12/2020
+ */
 export const variance = (input) => {
   const inputSize = input.length;
   const average = input.reduce((acc, p) => acc + p, 0) / inputSize;
